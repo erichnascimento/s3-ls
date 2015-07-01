@@ -43,7 +43,7 @@ func List(file string, config *Config) ([]*FileInfo, error) {
 
 	if *response.IsTruncated {
 		return nil, fmt.Errorf(
-			"O limite máximo de arquivos no backup por cliente que é de %d foi ultrapassado.",
+			"Sorry, the max limit for files in list is %d. The solution is comming soon :(",
 			*response.MaxKeys)
 	}
 
